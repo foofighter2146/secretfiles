@@ -1,0 +1,4 @@
+This is a small text only for unit testing.
+
+Some Special chars: öäüÖÜÄß~+*#'"§$%&/()=[] !
+
