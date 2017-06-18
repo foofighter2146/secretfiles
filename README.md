@@ -1,4 +1,4 @@
-##SecretFiles
+## SecretFiles
 
 SecretFiles is a small wrapper around the build-in Java 7+ Security API that provides a
 more convenient usage for encrypting and decrypting files. The encryption source is either another 
@@ -41,7 +41,7 @@ Generate the public key from the private key:
 ```
 openssl rsa -in private.pem -pubout -outform DER -out public.der
 ```
-###Usage
+### Usage
 
 For encryption of the symmetric key you need to generate a PKCS#8 private/public key pair with
 the openssl commands described above or programmatically:
@@ -119,7 +119,7 @@ Note that you have to consider the charset encoding if you dael with special cha
 ä, Ö, á etc. If you omit the definition then an explicit Charset encoding UTF-8 is taken
 by default.   
 
-###Licence Apache 2.0
+### Licence Apache 2.0
  
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
