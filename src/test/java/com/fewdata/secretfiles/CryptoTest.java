@@ -15,8 +15,7 @@
  */
 package com.fewdata.secretfiles;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -33,13 +32,18 @@ public final class CryptoTest {
     private final static String DECRYPTED = PATH + "decrypted.txt";
     private final static String ENCRYPTED_STRING = PATH + "encrypted_string.txt";
 
-    private SymKey symKey;
+    private static SymKey symKey;
 
-    @Before
-    public void init() throws Exception {
+    @BeforeClass
+    public static void init() throws Exception {
         symKey = AESKeyGenerator.create(
                 PATH + "test_aes.key",
                 PATH + "test_public.der");
+    }
+
+    @AfterClass
+    public static void cleanup() throws Exception {
+        Files.delete(Paths.get(PATH + "test_aes.key"));
     }
 
     @Test
