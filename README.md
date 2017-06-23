@@ -1,4 +1,4 @@
-## SecretFiles
+## Secret Files
 
 SecretFiles is a small wrapper around the build-in Java 7+ Security API that provides a
 more convenient usage for encrypting and decrypting files. The encryption source is either another 
