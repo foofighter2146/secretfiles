@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fewdata.secretfiles;
+package com.github.foofighter2146.secretfiles;
 
 import javax.crypto.*;
 import javax.crypto.spec.PBEKeySpec;
