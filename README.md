@@ -43,6 +43,16 @@ openssl rsa -in private.pem -pubout -outform DER -out public.der
 ```
 ### Usage
 
+First you have to add the dependency to your build file, e.g. for Maven POM:
+
+ ```XML
+<dependency>
+    <groupId>com.github.foofighter2146</groupId>
+    <artifactId>secretfiles</artifactId>
+    <version>1.0</version>
+</dependency>
+```
+         
 For encryption of the symmetric key you need to generate a PKCS#8 private/public key pair with
 the openssl commands described above or programmatically:
  
